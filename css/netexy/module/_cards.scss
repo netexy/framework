@@ -1,0 +1,278 @@
+/*---
+
+```
+<div class="row center-xs">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-9 body-bg c--body">
+        <!-- start article -->
+        <div id="main" class="">
+
+          <div class="text-align--center">
+
+            <div class="row center-xs pad-xs-x sharm--row">
+<style>
+  .sharm--row article {
+    padding-left: .77rem;
+  }  
+  .sharm--row:first-child {
+    padding-left: 0;
+  }
+  .sharm--item {
+    min-height: 250px;
+    position: relative;
+    margin: 4.5rem 0 0 0;
+    padding-top: 3.125rem;
+    padding-bottom: 1.125rem;
+    border-radius: 2px;
+    background: #15161A;
+  }
+  .sharm--item h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    text-shadow: 0 0 1px #000, 0 0 4px #000;
+  }
+  .sharm--item p {
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .55);
+  }
+  
+  
+  .sharm--item .border {
+    padding-bottom: 1rem;
+  }
+  .sharm--item .border:after {
+    height: 1px;
+    border-radius: 1px;
+    background-image: linear-gradient(-90deg, #337CF0 0%, #3adaff 45%, #3adaff 55%, #337CF0 100%);
+    box-shadow:       0 0 7px rgba(0, 0, 0, .55);
+  }
+  .sharm--icon {
+    width:7rem; 
+    height: 7rem;
+    position: absolute;
+    top: -3.5rem;
+    left:calc(50% - 3.5rem);
+    border:.5rem solid #3adaff;
+    border-radius: 50%;
+    background: #15161A;
+   -moz-box-shadow:    inset 0 0 7px rgba(0, 0, 0, .55);
+   -webkit-box-shadow: inset 0 0 7px rgba(0, 0, 0, .55);
+   box-shadow:         inset 0 0 7px rgba(0, 0, 0, .55);
+  }  
+  .sharm--icon:before {
+    width:7.5rem; 
+    height: 7.5rem;
+    top: calc(50% - 3.75rem);
+    left:calc(50% - 3.75rem);
+    content: " ";
+    position: absolute;
+    border-radius: 50%;
+    border: .25rem solid #15161A;
+    -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+    z-index: -1;
+  }  
+  .sharm--icon i {
+    color:  #3adaff;
+    font-size: 4rem;
+    line-height: 6rem;
+    text-shadow: 0 0 1px #fff, 0 0 2px #3adaff, 0 0 4px #3adaff, 0 0 7px #337CF0, 0 0 9px #337CF0, 0 0 12px #337CF0, 0 0 20px #337CF0, 0 0 35px #15161A;
+  }   
+</style>  
+
+              <article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mar-xs-b">
+                <div class="a--subtle a--block block-grid--align-item sharm--item pad-xs-x z-depth-2" href="#!">
+
+                  <div class="middle-xs sharm--icon stat-icon-wrapper js-in-view is-active">
+                    <i class="material-icons c--akcent">code</i>
+                  </div>
+
+                  <h2 class="col-xs-12 flush h4 center layout-text--default mar-xs-t"><span class="border">Розробка</span></h2>
+
+                  <p class="sans tertiary">Повністю усвідомлюємо, що купуючи квартири в наших проектах, клієнти довіряють нам один з найважливіших виборів свого життя!</p>
+
+                  <!-- 
+                   <div class="block-grid--align-bottom">
+                    <span class="push--copy button button--bright">
+							Дізнатись більше
+						</span>
+                  </div>
+                  -->
+
+                </div>
+              </article>
+              <article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mar-xs-b">
+                <div class="a--subtle a--block block-grid--align-item sharm--item pad-xs-x z-depth-2" href="#!">
+
+                  <div class="sharm--icon stat-icon-wrapper js-in-view is-active">
+                    <i class="material-icons c--akcent">format_paint</i>
+                  </div>
+
+                  <h2 class="col-xs-12 flush h4 center layout-text--default mar-xs-t"><span class="border">Верстка</span></h2>
+
+                  <p class="sans tertiary">Повністю усвідомлюємо, що купуючи квартири в наших проектах, клієнти довіряють нам один з найважливіших виборів свого життя!</p>
+
+                  <!-- 
+                   <div class="block-grid--align-bottom">
+                    <span class="push--copy button button--bright">
+							Дізнатись більше
+						</span>
+                  </div>
+                  -->
+
+                </div>
+              </article>
+
+              <article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mar-xs-b">
+                <div class="a--subtle a--block block-grid--align-item sharm--item pad-xs-x z-depth-2" href="#!">
+
+                  <div class="sharm--icon stat-icon-wrapper js-in-view is-active">
+                    <i class="material-icons c--akcent">bug_report</i>
+                  </div>
+
+                  <h2 class="col-xs-12 flush h4 center layout-text--default mar-xs-t"><span class="border">Оптимізація</span></h2>
+
+                  <p class="sans tertiary">Повністю усвідомлюємо, що купуючи квартири в наших проектах, клієнти довіряють нам один з найважливіших виборів свого життя!</p>
+
+                  <!-- 
+                   <div class="block-grid--align-bottom">
+                    <span class="push--copy button button--bright">
+							Дізнатись більше
+						</span>
+                  </div>
+                  -->
+
+                </div>
+              </article>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+```
+
+*/
+
+$block: '.card';
+
+#{$block} {
+
+  &__row {
+
+    article {
+      padding-left: .77rem;
+    }
+  }
+
+  &__item {
+    min-height: 250px;
+    position: relative;
+    margin: 4.5rem 0 0 0;
+    padding-top: 3.125rem;
+    padding-bottom: 1.125rem;
+    border-radius: 2px;
+    background: #15161A;
+
+    h2 {
+      color: $c--white;
+      font-size: 1.55rem;
+      line-height: 1.88rem;
+      font-weight: 300;
+      letter-spacing: .05rem;
+      text-shadow: 0 0 1px #000, 0 0 4px #000;
+
+      @include mq('tablet') {
+        font-size: 1.88rem;
+        line-height: 2.22rem;
+      }      
+    }
+
+    p {
+      color: #fff;
+      font-size: 1.11rem;
+      line-height: 1.44rem;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, .55);
+
+      @include mq('tablet') {
+        font-size: 1.25rem;
+        line-height: 1.55rem;
+      }  
+    }
+
+    .border {
+      padding-bottom: 1rem;
+
+      &:after {
+        height: 1px;
+        border-radius: 1px;
+        background-image: linear-gradient(-90deg, #337CF0 0%, #3adaff 45%, #3adaff 55%, #337CF0 100%);
+        box-shadow: 0 0 7px rgba(0, 0, 0, .55);
+      }
+    }
+  }
+
+  &__icon {
+    width: 7rem;
+    height: 7rem;
+    position: absolute;
+    top: -3.5rem;
+    left: calc(50% - 3.5rem);
+    text-align: center;
+    border: .5rem solid #3adaff;
+    border-radius: 50%;
+    background: #15161A;
+    -moz-box-shadow: inset 0 0 7px rgba(0, 0, 0, .55);
+    -webkit-box-shadow: inset 0 0 7px rgba(0, 0, 0, .55);
+    box-shadow: inset 0 0 7px rgba(0, 0, 0, .55);
+
+    &:before {
+      width: 7.5rem;
+      height: 7.5rem;
+      top: calc(50% - 3.75rem);
+      left: calc(50% - 3.75rem);
+      content: " ";
+      position: absolute;
+      border-radius: 50%;
+      border: .25rem solid #15161A;
+      -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+      z-index: -1;
+    }
+
+    i {
+      color: #3adaff;
+      font-size: 4rem;
+      line-height: 6rem;
+      text-shadow: 0 0 1px #fff, 0 0 2px #3adaff, 0 0 4px #3adaff, 0 0 7px #337CF0, 0 0 9px #337CF0, 0 0 12px #337CF0, 0 0 20px #337CF0, 0 0 35px #15161A;
+    }
+  }
+}
+
+.c--future-block {
+  position: relative;
+  padding: .77rem;
+  border-radius: 2px;
+  background: #15161A;
+}
+
+.spec-enum h3 {
+  font-size: $h--medium;
+  font-weight: $light--text;
+  text-transform: $text-up;
+}
+
+.c--future-icon {
+  color: #3adaff;
+  text-shadow: 0 0 1px #fff, 0 0 2px #3adaff, 0 0 3px #337CF0, 0 0 5px #337CF0, 0 0 7px #337CF0, 0 0 10px #15161A;
+}
+
+.spec-enum {
+    padding-top: 1.125rem;
+    padding-bottom: 1.125rem;  
+}

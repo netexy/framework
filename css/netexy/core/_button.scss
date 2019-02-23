@@ -1,0 +1,435 @@
+/*---
+
+Clickable buttons:
+
+```
+<div class="button-wrapper">
+	<button class="button">Button</button>
+</div>
+
+<div class="button-wrapper">
+	<a href="#0" class="button">Button (link)</a>
+</div>
+
+<div class="button-wrapper">
+	<span class="button">Faux button</span>
+</div>
+```
+
+`light` style:
+
+```
+<div style="background-color: #0c0c0c">
+
+	<div class="button-wrapper">
+		<button class="button button--light">Button</button>
+	</div>
+
+	<div class="button-wrapper">
+		<a href="#0" class="button button--light">Button (link)</a>
+	</div>
+
+	<div class="button-wrapper">
+		<span class="button button--light">Faux button</span>
+	</div>
+
+</div>
+```
+
+Disabled buttons:
+
+```
+<div class="button-wrapper">
+	<button class="button" disabled>Button</button>
+</div>
+
+<div class="button-wrapper">
+	<span class="button button--disabled">Faux button</span>
+</div>
+
+<div class="button-wrapper">
+	<button class="button button--light" disabled>Light button</button>
+</div>
+
+<div class="button-wrapper">
+	<span class="button button--light button--disabled">Faux light button</span>
+</div>
+```
+
+*/
+
+// basic buttons
+.button {
+  position: relative;
+  padding: .44rem 1.11rem;
+  font-family: $stack--sans;
+  font-size: $p--small;
+  font-weight: $w--bold;
+  line-height: $lh--small;
+  color: $c--black;
+  background-color: transparent;
+  text-transform: uppercase;
+  text-decoration: none;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: rgba($c--white, 0);
+  box-shadow: inset 0 0 0 1px $c--black;
+  transition: color .3s $ease--out-quint;
+  -webkit-backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+
+  @include mq('tablet') {
+    padding: .55rem 1.44rem;
+    font-size: $p;
+    box-shadow: inset 0 0 0 1px $c--black,
+      0 0 0 1px $c--black;
+  }
+
+
+  &--size-xs {
+    font-size: 14px;
+  }
+
+  &--size-sm {
+    font-size: 16px;
+  }
+
+  &--size-md {
+    font-size: 18px;
+  }
+
+  &--size-lg {
+    font-size: 20px;
+  }
+
+  &--size-xl {
+    font-size: 22px;
+  }
+}
+
+
+// colours
+.button--light {
+  color: $c--white;
+  box-shadow: inset 0 0 0 1px $c--white;
+
+  @include mq('tablet') {
+    box-shadow: inset 0 0 0 1px $c--white,
+      0 0 0 1px $c--white;
+  }
+
+  &::after {
+    background: $c--white;
+  }
+
+  &:hover,
+  &:focus {
+    color: $c--black !important;
+  }
+}
+
+// shine
+.button--bright {
+  color: $c--akcent;
+  text-shadow: 0 1px 2px $c--black;
+  letter-spacing: 0.011rem;
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, .55);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: inset 0 0 0 1px $c--akcent;
+
+  @include mq('tablet') {
+    letter-spacing: 0.022rem;
+    box-shadow: inset 0 0 0 1px $c--akcent,
+      0 0 0 1px $c--akcent;
+  }
+
+  &::after {
+    background: $c--akcent;
+    box-shadow: inset 0 0 0 1px $c--black;
+  }
+
+  &:hover,
+  &:focus {
+    color: $c--black !important;
+    text-shadow: none;
+    background-color: $c--akcent;
+    box-shadow: inset 0 0 0 1px $c--black;
+  }
+}
+
+// dark
+.button--dark {
+  color: $c--black;
+  text-shadow: 0 1px 1px $c--white;
+  background-color: rgba(255, 255, 255, .55);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: inset 0 0 0 1px $c--black;
+
+  @include mq('tablet') {
+    box-shadow: inset 0 0 0 1px $c--black,
+      0 0 0 1px $c--black;
+  }
+
+  &::after {
+    background: $c--black;
+    box-shadow: inset 0 0 0 1px $c--white;
+  }
+
+  &:hover,
+  &:focus {
+    color: $c--white !important;
+    text-shadow: none;
+    background-color: $c--black;
+    box-shadow: inset 0 0 0 1px $c--white;
+  }
+}
+
+// shine
+.button--teal {
+  color: $c--white;
+  font-weight: 500;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .33);
+  letter-spacing: 0.005rem;
+  text-transform: uppercase;
+  background-color: $c--teal;
+  box-shadow: inset 0 0 0 1px $c--insta-old;
+
+  @include mq('tablet') {
+    letter-spacing: 0.008rem;
+    box-shadow: inset 0 0 0 1px $c--insta-old,
+      0 0 0 1px $c--insta-old;
+  }
+
+  &::after {
+    background: $c--teal-light;
+    box-shadow: inset 0 0 0 1px $c--insta-old;
+  }
+
+  &:hover,
+  &:focus {
+    color: $c--insta-old !important;
+    text-shadow: none;
+    background-color: $c--teal-light;
+    box-shadow: inset 0 0 0 1px $c--insta-old;
+  }
+}
+
+.button--future {
+  color: #3ADAFF;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.111rem;
+  padding: .33rem .88rem;
+  text-shadow: 0 0 1px #3adaff, 0 0 2px #3adaff, 0 0 7px #15161a, 0 0 9px #337cf0, 0 0 12px #337cf0, 0 0 20px #337cf0, 0 0 35px #15161a;
+  background-color: #15161A;
+  border: 1px solid rgba(0, 0, 0, .33);
+
+  @include mq('tablet') {
+    font-size: 16px;
+    padding: .44rem 1.11rem;
+  }
+
+  i {
+
+    &:hover,
+    &:focus {
+      color: #3adaff;
+      text-shadow: 0 0 1px #fff, 0 0 2px #3adaff, 0 0 3px #337CF0, 0 0 5px #337CF0, 0 0 7px #337CF0, 0 0 10px #15161A
+    }
+  }
+
+  /*start*/
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    border-radius: inherit;
+  }
+
+  &::before {
+    top: -3px;
+    bottom: -3px;
+    left: -3px;
+    right: -3px;
+    background-color: #3ADAFF;
+    z-index: -1;
+
+    @include mq('tablet') {
+      top: -4px;
+      bottom: -4px;
+      left: -4px;
+      right: -4px;
+    }
+  }
+
+  &::after {
+    top: -4px;
+    bottom: -4px;
+    left: -4px;
+    right: -4px;
+    background-color: #010101;
+    -webkit-transition: -webkit-transform 0.3s, background-color 0.3s;
+    -webkit-transition: background-color 0.3s, -webkit-transform 0.3s;
+    transition: background-color 0.3s, -webkit-transform 0.3s;
+    -o-transition: transform 0.3s, background-color 0.3s;
+    transition: transform 0.3s, background-color 0.3s;
+    transition: transform 0.3s, background-color 0.3s, -webkit-transform 0.3s;
+    z-index: -2;
+
+    @include mq('tablet') {
+      top: -5px;
+      bottom: -5px;
+      left: -5px;
+      right: -5px;
+    }
+  }
+
+  &::before,
+  &::after {}
+
+  &::before,
+  &::after {}
+
+  &:hover {
+    color: #fff !important;
+
+    @include mq('tablet') {}
+  }
+
+  &:hover::before {
+    background-color: #fff;
+    -webkit-box-shadow: inset 0 0 1px 1px #337cf0, inset 0 0 2px 0 #3ADAFF, inset 0 0 3px 1px #fff, inset 0 0 3px 0 #15161a;
+    box-shadow: inset 0 0 1px 1px #337cf0, inset 0 0 2px 0 #3ADAFF, inset 0 0 3px 1px #fff, inset 0 0 3px 0 #15161a;
+
+    @include mq('tablet') {
+      -webkit-box-shadow: inset 0 0 2px 1px #337cf0, inset 0 0 2px 0 #3ADAFF, inset 0 0 3px 1px #fff, inset 0 0 3px 0 #15161a;
+      box-shadow: inset 0 0 2px 1px #337cf0, inset 0 0 2px 0 #3ADAFF, inset 0 0 3px 1px #fff, inset 0 0 3px 0 #15161a;
+    }
+  }
+
+  &:hover::after {}
+
+  &:hover::after {}
+
+  &:hover::after,
+  &:hover::before {}
+
+  /*end*/
+  /*check-from
+  &::after {
+    background: $c--akcent;
+    box-shadow: inset 0 0 0 1px $c--black;
+  }
+
+  &:hover,
+  &:focus {
+    color: $c--black !important;
+    text-shadow: none;
+    background-color: $c--akcent;
+    box-shadow: inset 0 0 0 1px $c--black;
+  }
+  /*check-to*/
+  &:focus {
+    outline: none;
+  }
+}
+
+// basic buttons
+.button {
+
+  &[disabled],
+  &--disabled {
+    cursor: not-allowed;
+
+    &,
+    &:hover,
+    &:focus {
+      background-color: $c--grey-light;
+      color: mix($c--grey-light, $c--black, 60%);
+    }
+
+    &:active {
+      top: 0;
+    }
+  }
+}
+
+
+
+
+@include mq('tablet-small') {
+  .pagination-flex {
+    width: 100%;
+
+    li.prev,
+    li.next {
+      width: 10%;
+    }
+
+    li.pages {
+      width: 80%;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+}
+
+// Articles Pagination
+.pagination-flex {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  li {
+    display: inline-block;
+    border-radius: 4px;
+    text-align: center;
+    vertical-align: top;
+    height: 60px;
+
+    a {
+      color: #444;
+      display: inline-block;
+      font-size: 2.4rem;
+      padding: 0 20px;
+      line-height: 60px;
+    }
+
+    &.active a {
+      color: #fff;
+    }
+
+    &.active {
+      background-color: $c--teal;
+    }
+
+    &.disabled a {
+      cursor: default;
+      color: #999;
+    }
+
+    i {
+      font-size: 4rem;
+    }
+  }
+
+  li.prev,
+  li.next {
+    width: 10%;
+  }
+
+  li.pages {
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+
+  li.pages ul li {
+    display: inline-block;
+    float: none;
+  }
+}
